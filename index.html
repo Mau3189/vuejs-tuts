@@ -13,14 +13,15 @@
   </head>
   <body>
     <div id='app'>
-      <p>{{ sayHello() }}</p>
+      <p>{{ sayHello() }} - <a v-bind:href="link">google</a></p>
     </div>
 
     <script>
       new Vue({
         el: '#app',
         data: {
-          title: 'Mau'
+          title: 'Mau',
+          link: 'http://google.com'
         },
         methods: {
           sayHello: function() {
